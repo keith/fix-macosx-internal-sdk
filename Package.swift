@@ -5,7 +5,7 @@ let package = Package(
     name: "fix-macosx-internal-sdk",
     dependencies: [
         .package(url: "https://github.com/apple/swift-argument-parser", .upToNextMinor(from: "0.4.0")),
-        .package(url: "https://github.com/tuist/XcodeProj.git", .upToNextMajor(from: "8.0.0")),
+        .package(url: "https://github.com/tuist/XcodeProj.git", .upToNextMajor(from: "9.3.0")),
     ],
     targets: [
         .target(

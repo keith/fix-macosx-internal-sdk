@@ -1,8 +1,8 @@
 import XcodeProj
 
 private func update(configuration: XCBuildConfiguration) -> XCBuildConfiguration {
-  if configuration.buildSettings["SDKROOT"] as? String == "macosx.internal" {
-    configuration.buildSettings["SDKROOT"] = "macosx"
+  if case let .string(value) = configuration.buildSettings["SDKROOT"], value == "macosx.internal" {
+    configuration.buildSettings["SDKROOT"] = .string("macosx")
   }
 
   return configuration
