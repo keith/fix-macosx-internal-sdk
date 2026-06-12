@@ -7,7 +7,7 @@ let package = Package(
         .macOS("13.0"),
     ],
     dependencies: [
-        .package(url: "https://github.com/apple/swift-argument-parser", .upToNextMinor(from: "0.4.0")),
+        .package(url: "https://github.com/apple/swift-argument-parser", .upToNextMinor(from: "1.8.2")),
         .package(url: "https://github.com/tuist/XcodeProj.git", .upToNextMajor(from: "9.13.0")),
     ],
     targets: [
