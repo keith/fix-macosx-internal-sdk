@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "fix-macosx-internal-sdk",
     platforms: [
-        .macOS("13.0"),
+        .macOS("14.0"),
     ],
     dependencies: [
         .package(url: "https://github.com/apple/swift-argument-parser", .upToNextMinor(from: "1.8.2")),
